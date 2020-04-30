@@ -1,0 +1,36 @@
+/* ________ RESET ________*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* ________ FIINE RESET ________*/
+
+/* ________ REGOLE GENERALI ________*/
+body {
+  font-family: 'Open Sans', 'Lato', sans-serif;
+  line-height: 1.5;
+  color: #212529;
+}
+/* ________ FINE REGOLE GENERALI ________*/
+
+/* ________ MENU FIXED ________*/
+nav.row {
+  max-width: 100%;
+}
+ nav [class*="col-"] {/*cancellare*/
+   height: 100px;
+ }
+ /* ________ FINE MENU FIXED ________*/
+
+/* ________ HEADER ________*/
+h1 {
+  font-size: 3em;
+}
+/* ________ FIINE HEADER ________*/
+
+/* ________ MAIN ________*/
+/* ________ FINE MAIN ________*/
+
+/* ________ FOOTER ________*/
+/* ________ FINE FOOTER ________*/

@@ -12,20 +12,69 @@ body {
   line-height: 1.5;
   color: #212529;
 }
+
+h1 {
+  font-size: 3em;
+}
+
+li {
+  list-style-type: none;
+}
 /* ________ FINE REGOLE GENERALI ________*/
 
 /* ________ MENU FIXED ________*/
 nav.row {
   max-width: 100%;
+  background-color: white;
+  text-align: center;
+  padding: 1.5em 0;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 2345678;
 }
- nav [class*="col-"] {/*cancellare*/
-   height: 100px;
- }
+
+nav.row img {
+  vertical-align: middle;
+}
+
+nav .menu-fixed li {
+  display: inline-block;
+  font-size: 0.7em;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  padding: 0 0.9em;
+}
+
+nav .menu-fixed li:nth-child(1n+9) {
+  border-left: 1px solid #212529;
+}
  /* ________ FINE MENU FIXED ________*/
 
 /* ________ HEADER ________*/
-h1 {
-  font-size: 3em;
+header {
+  position: relative;
+  top: 4em;
+  background-image: url("../img/hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  color: white;
+  text-align: center;
+  line-height: 2;
+  font-weight: bold;
+}
+
+header .jumbo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+header .jumbo ul li {
+  display: inline-block;
+  margin-top: 1.5em;
 }
 /* ________ FIINE HEADER ________*/
 

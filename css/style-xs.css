@@ -1,0 +1,26 @@
+@media screen and (max-width: 768px) {
+  /* ________ MENU FIXED ________*/
+  nav .col-lg-8 ul {
+    display: none;
+  }
+
+  nav.row {
+    padding-right: 50px;
+    padding-left: 20px
+  }
+
+  nav .col-xs-7 img {
+    height: 2em;
+  }
+
+  nav .col-xs-1 i {
+    font-size: 2.5em;
+  }
+  /* ________ FINE MENU FIXED ________*/
+
+  /* ________ HEADER ________*/
+  h1 {
+    font-size: 2.5em;
+  }
+  /* ________ FINE HEADER ________*/
+}

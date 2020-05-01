@@ -23,4 +23,13 @@
       font-size: 3em;
     }
   /* ________ FINE HEADER ________*/
+
+  /* ________ MAIN ________*/
+  /* Sezione Phone */
+  main .phone .row .iphone {
+    width: 320px;
+    top: 65%;
+  }
+  /* Fine Sezione Phone */
+  /* ________ FINE MAIN ________*/
 }

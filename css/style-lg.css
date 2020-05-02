@@ -1,11 +1,3 @@
-/* ________ RESET ________*/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-/* ________ FIINE RESET ________*/
-
 /* ________ REGOLE GENERALI ________*/
 body {
   font-family: 'Open Sans', sans-serif;
@@ -26,6 +18,13 @@ img {
 /* ________ FINE REGOLE GENERALI ________*/
 
 /* ________ MENU FIXED ________*/
+@media screen and (min-width: 993px) {
+  nav .col-md-6 i,
+  nav .col-xs-6 i {
+    display: none;
+  }
+}
+
 nav.row {
   max-width: 100%;
   background-color: white;
@@ -46,11 +45,21 @@ nav .menu-fixed li {
   display: inline-block;
   font-size: 0.8em;
   font-weight: bold;
-  padding: 0 0.8%;
+  padding: 0 1.3%;
+  transition: 0.3s ease;
 }
 
 nav .menu-fixed li:nth-child(1n+9) {
   border-left: 1px solid #212529;
+}
+
+nav .menu-fixed li:hover {
+  transform: scale(1.3);
+  text-decoration: underline;
+}
+
+nav .menu-fixed li a {
+  color: #212529;
 }
  /* ________ FINE MENU FIXED ________*/
 
@@ -81,11 +90,30 @@ header h1 {
 
 header .jumbo ul li {
   display: inline-block;
-  margin-top: 1.5em;
+  margin: 1.5em;
+  transition: 0.3s ease;
+}
+
+header .jumbo ul li:hover {
+  transform: scale(1.2);
+}
+
+header .jumbo ul li img:hover {
+  border-radius: 10px;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
 }
 /* ________ FIINE HEADER ________*/
 
 /* ________ MAIN ________*/
+main .fa-angle-right {
+  padding: 0 20px;
+  text-decoration: none;
+}
+
+main a:hover {
+  text-decoration: underline;
+}
+
 /* Sezione Mobility */
 main .mobility .row {
   max-width: 80%;
@@ -95,13 +123,20 @@ main .mobility .row {
 
 main .mobility .row .box {
   background-color: #fafafa;
-    margin: 7% 5%;
-    padding-top: 10%;
+  margin: 7% 5%;
+  padding-top: 10%;
+  transition: 0.3s ease-in-out;
+}
+
+main .mobility .row .box:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.08);
 }
 
 main .mobility .row .box img.helbiz {
   width: 50%;
 }
+
 main .mobility .row .box > p {
   margin: 5% 0;
 }
@@ -150,6 +185,12 @@ main .city .row div[class*="col-"] {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  transition: 0.3s ease-in-out;
+}
+
+main .city .row div[class*="col-"]:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 main .city .row p {
@@ -186,7 +227,7 @@ main .city .row.up .col-lg-12 .text {
 main .city .row.down .col-lg-6 {
   max-width: 48%;
   padding-top: 3%;
-  height: 800px;
+  height: 700px;
 }
 
 main .city .row.down .col-lg-6:nth-of-type(1) {
@@ -196,8 +237,9 @@ main .city .row.down .col-lg-6:nth-of-type(1) {
 
 main .city .row.down .col-lg-6:nth-of-type(1) img {
   position: absolute;
-  left: 0;
+  left: 25%;
   bottom: 0;
+  width: 50%;
 }
 
 main .city .row.down .col-lg-6:nth-of-type(2) {
@@ -293,8 +335,8 @@ footer .container .app ul li {
 /* ________ FINE FOOTER ________*/
 
 @media screen and (min-width: 993px) {
-  nav .col-md-1 i,
-  nav .col-xs-1 i {
+  nav .col-md-6 i,
+  nav .col-xs-6 i {
     display: none;
   }
 }

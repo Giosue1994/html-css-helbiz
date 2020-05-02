@@ -5,16 +5,21 @@
   }
 
   nav.row {
-    padding-right: 50px;
-    padding-left: 20px
+    padding: 1.5em 2em;
+    text-align: right;
   }
 
-  nav .col-xs-7 img {
-    height: 2em;
+  nav .col-xs-6:nth-child(1) {
+    text-align: left;
   }
 
-  nav .col-xs-1 i {
-    font-size: 2.5em;
+  nav .col-xs-6 i {
+    font-size: 2em;
+    color: #212529;
+  }
+
+  nav .col-xs-6 i:active {
+    color: #2e0052;
   }
   /* ________ FINE MENU FIXED ________*/
 
@@ -76,8 +81,8 @@
   }
 
   main .city .row.down .col-xs-12:nth-of-type(1) img {
-    width: 70%;
-    left: 15%;
+    width: 50%;
+    left: 25%;
   }
 
   main .city .row.down .col-xs-12:nth-of-type(2) {

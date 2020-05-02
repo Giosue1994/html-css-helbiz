@@ -5,16 +5,21 @@
   }
 
   nav.row {
-    padding-right: 20px;
-    padding-left: 20px
+    padding: 1.5em 4em;
+    text-align: right;
   }
 
-  nav .col-md-3 img {
-    height: 1.5em;
+  nav .col-md-6:nth-child(1) {
+    text-align: left;
   }
 
-  nav .col-md-1 i {
+  nav .col-md-6 i {
     font-size: 2em;
+    color: #212529;
+  }
+
+  nav .col-md-6 i:active {
+    color: #2e0052;
   }
   /* ________ FINE MENU FIXED ________*/
 
@@ -43,7 +48,7 @@
     max-width: 90%;
   }
 
-  main .city .row.down .col-lg-6 {
+  main .city .row.down .col-md-6 {
     height: 600px;
   }
   /* Fine Sezione City */

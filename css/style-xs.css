@@ -36,13 +36,19 @@
   /* Fine Sezione Mobility */
 
   /* Sezione Phone */
-  main .phone .row .col-xs-3 {
-    padding: 8% 4%;
+  main .phone .row .col-xs-12:nth-of-type(1) {
+    padding: 30% 0 0 5%;
+    font-size: 25px;
+  }
+
+  main .phone .row .col-xs-12:nth-of-type(3) {
+    padding: 10% 0 30% 5%;
+    font-size: 20px;
   }
 
   main .phone .row .iphone {
     width: 320px;
-    top: 70%;
+    top: 40%;
   }
   /* Fine Sezione Phone */
 
@@ -51,14 +57,15 @@
       max-width: 100%;
     }
 
-    /* row up */
+  /* row up */
   main .city .row.down .col-xs-12 {
     max-width: 100%;
     height: 500px;
   }
 
   main .city .row.up .col-xs-12:first-of-type {
-    background-position: left;
+    background-size: 400%;
+    background-position: 34%;
   }
   /* fine row up */
 
@@ -80,4 +87,15 @@
   /* fine row down */
   /* ________ FINE MAIN ________*/
 
+  /* link */
+  footer .container .link .col-lg-3 img {
+    width: 130px;;
+  }
+
+  /* ________ FOOTER ________*/
+  footer .container .link .col-lg-3 h4 {
+    margin-top: 2em;
+  }
+  /* fine link */
+  /* ________ FINE FOOTER ________*/
 }

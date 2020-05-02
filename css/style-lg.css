@@ -8,7 +8,7 @@
 
 /* ________ REGOLE GENERALI ________*/
 body {
-  font-family: 'Open Sans', 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: #212529;
 }
 
@@ -146,7 +146,7 @@ main .city .row {
   font-weight: bold;
 }
 
-main .city .row div {
+main .city .row div[class*="col-"] {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -210,6 +210,7 @@ main .city .row.down .col-lg-6:nth-of-type(2) {
 /* Sezione Social */
 main .social {
   position: relative;
+  margin-bottom: 3%;
   background-image: url("../img/Social-Banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -224,7 +225,7 @@ main .social .family {
   transform: translate(-50%, -50%);
   width: 400px;
   background-color: white;
-  padding: 5%;
+  padding: 3%;
   font-size: 1.5em;
 }
 
@@ -236,6 +237,59 @@ main .social .family ul li {
 /* ________ FINE MAIN ________*/
 
 /* ________ FOOTER ________*/
+footer {
+  font-family: 'Lato' ,sans-serif;
+  padding: 100px 0;
+  background-color: #000;
+  color: white;
+}
+
+footer .container .row {
+  line-height: 2.5;
+  max-width: 80%;
+}
+
+footer .container hr {
+  border: 1px solid hsla(0,0%,100%,.1);
+  max-width: 80%;
+  margin: 2em auto;
+}
+/* link */
+footer .container .link .col-lg-3 img {
+  width: 130px;;
+}
+
+footer .container .link .col-lg-3 ul li {
+  color: #696969;
+  font-size: 0.95em;
+}
+/* fine link */
+
+/* social */
+footer .container .social .col-lg-3 {
+  line-height: 40px;
+}
+footer .container .social .col-lg-3 ul li {
+  display: inline-block;
+  margin-right: 8%;
+  font-size: 1.5em;
+}
+
+footer .container .social a {
+  color: white;
+  font-size: 0.85em;
+}
+/* fine social */
+
+/* app */
+footer .container .app ul {
+  text-align: center;
+}
+
+footer .container .app ul li {
+  display: inline-block;
+}
+/* fine app */
 /* ________ FINE FOOTER ________*/
 
 @media screen and (min-width: 993px) {

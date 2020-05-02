@@ -26,6 +26,10 @@
 
   /* ________ MAIN ________*/
   /* Sezione Mobility */
+  main .mobility .row {
+    max-width: 100%;
+  }
+
     main .mobility .row .box {
       margin: 7% 15%;
   }
@@ -33,7 +37,7 @@
 
   /* Sezione Phone */
   main .phone .row .col-xs-3 {
-    padding: 8% 0;
+    padding: 8% 4%;
   }
 
   main .phone .row .iphone {
@@ -41,6 +45,39 @@
     top: 70%;
   }
   /* Fine Sezione Phone */
+
+  /* Sezione City */
+    main .city .row {
+      max-width: 100%;
+    }
+
+    /* row up */
+  main .city .row.down .col-xs-12 {
+    max-width: 100%;
+    height: 500px;
+  }
+
+  main .city .row.up .col-xs-12:first-of-type {
+    background-position: left;
+  }
+  /* fine row up */
+
+  /* row down */
+  main .city .row.up .col-xs-12 .text {
+    left: 50%;
+    width: 80%;
+  }
+
+  main .city .row.down .col-xs-12:nth-of-type(1) img {
+    width: 70%;
+    left: 15%;
+  }
+
+  main .city .row.down .col-xs-12:nth-of-type(2) {
+    margin-left: 0;
+    margin-top: 3%;
+  }
+  /* fine row down */
   /* ________ FINE MAIN ________*/
 
 }
